@@ -216,6 +216,10 @@ button:active {
     align-items: center;
 }
 
+.highlight__row {
+    padding-top: 28px;
+}
+
 .no-cursor {
     cursor: not-allowed;
 }
