@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3b0c53314d.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <script src="books.js"></script>
+    <script src="books.js" defer></script>
 </head>
 
 <body id="books__body">
@@ -17,7 +17,7 @@
             <div class="nav__container">
                 <img class="logo" src="assets/Library.svg" alt="">
                 <ul class="nav__links">
-                    <li><a href="#" class="nav__link">Home</a></li>
+                    <li><a href="index.html" class="nav__link">Home</a></li>
                     <li><a href="#" class="nav__link">Contact</a></li>
                     <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
                 </ul>
@@ -30,10 +30,10 @@
                     </button>
                     <ul class="menu__links">
                         <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                            <a href="index.html" class="menu__link" onclick="closeMenu()">Home</a>
                         </li>
                         <li class="menu__list">
-                            <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+                            <a href="#" class="menu__link" onclick="closeMenu()">Books</a>
                         </li>
                         <li class="menu__list">
                             <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
@@ -59,7 +59,8 @@
                             <option value="RATING">Rating</option>
                         </select>
                     </div>
-                    <div class="books">
+                    <div class="books books__loading">
+                        <i class="fa-solid fa-spinner fa-spin books__loading--spinner"></i>
                     </div>
                 </div>
             </div>
@@ -75,9 +76,9 @@
                     </figure>
                 </a>
                 <div class="footer__list">
-                    <a href="#" class="footer__link">Home</a>
+                    <a href="index.html" class="footer__link">Home</a>
                     <a class="footer__link no-cursor">About</a>
-                    <a href="#features" class="footer__link">Books</a>
+                    <a href="#" class="footer__link">Books</a>
                     <a class="footer__link no-cursor">Contact</a>
                 </div>
                 <div class="footer__copyright">Copyright © 2026 Library</div>
